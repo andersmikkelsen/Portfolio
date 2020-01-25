@@ -1,0 +1,95 @@
+body {
+	min-width: 100wh;
+	min-height: 90vh;
+	color: #fff;
+	background: linear-gradient(180deg, #1976D2, #BBDEFB, #fff);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.textlol::selection {
+  background-color:#FF5252;
+  color: #fff;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+.maincontent {
+	background-color: #0277bd;
+}
+
+.contentheader {
+	color: #fff;
+}
+
+.whitetxt {
+	color: #fff;
+}
+
+.mainheader {
+	font-size: 70px;
+	text-decoration: underline #FF5252;
+}
+
+.row {
+	padding: 20px;
+}
+
+.content {
+	    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+p {
+
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: left;
+    padding: 50px;
+    font-size: 1.7rem;
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
