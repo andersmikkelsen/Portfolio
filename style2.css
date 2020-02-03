@@ -13,7 +13,7 @@ body {
    background-repeat: repeat;*/
 
 }
-.row > div > img { width: 100%; display: block; }
+.row > div > img { max-width: 100%; display: block; }
 
 .margintop {
     margin-top: 7.5%;
