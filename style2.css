@@ -61,7 +61,8 @@ img {
  }
 
 a:hover {
-    text-decoration: underline #FF5252; 
+    text-decoration: underline dashed #FF5252; 
+    color: #FF5252;
 }
 
 
@@ -114,6 +115,16 @@ a:hover {
     text-decoration: underline #FF5252; 
 
 }
+
+.call-to-action {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 .dropshadow {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
@@ -200,8 +211,10 @@ font-weight: bold;
 
 .maillink:hover{
     opacity: 0.8;
-    text-decoration: underline wavy #FF5252;
 }
+
+
+
 
 hr {
     border: 0;
@@ -240,11 +253,22 @@ position: static !important;
 @media screen and (min-width: 700px) {
 .maincontentcontainer {
      padding: 130px;
+     cursor: pointer;
+
+}
+
+.nav-link {
+    color: #fff;
+    font-family: "Space Mono", monospace;
+    font-size: 1.2rem;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    text-transform: uppercase;
 }
 
 .contentheader {
 	color:     #ffffff;
-	font-size: 160px;
+	font-size: 140px;
     font-weight: bold;
     text-align: left;
     text-decoration: wavy #007bff;
@@ -272,7 +296,20 @@ p, h1, h2, h3, h4, h5 {
 @media screen and (max-width: 699px) {
     .maincontentcontainer {
          padding: 40px;
+         cursor: pointer;
+
     }
+
+    .nav-link {
+        color: #fff;
+        font-family: "Space Mono", monospace;
+        font-size: 0.8rem;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+        text-transform: uppercase;
+
+    }
+
     .contentheader {
         color:     #ffffff;
         font-size: 80px;
@@ -296,6 +333,9 @@ p, h1, h2, h3, h4, h5 {
         margin-left: 10px;
         margin-right: 10px;
     }
+    nav.scrolled {
+        background: #3d4656;
+      }
     }
 
 
@@ -306,6 +346,10 @@ p {
     opacity: 0.8;
 }
 
+.black {
+    color: black;
+}
+
 li {
  /*   font-family: 'Montserrat', sans-serif;*/
     color: black;
@@ -314,11 +358,7 @@ li {
     font-weight: 400;
 }
 
-.nav-link {
-    color: #fff;
-    font-family: "Space Mono", monospace;
-    font-size: 1.2rem
-}
+
 
 
 ul
@@ -346,7 +386,7 @@ p::selection {
 h1 {
     font-family: 'Space Mono', monospace;
     color: black;
-    text-align: center;
+  /*  text-align: center;*/
     font-weight: bold;
 }
 
@@ -405,25 +445,4 @@ h2 {
 .grey {
     border: 4px dashed #212529 ;
   
-  }
-
-  #curvearrow {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-top: 9px solid transparent;
-    border-right: 9px solid red;
-    transform: rotate(10deg);
-  }
-  #curvearrow:after {
-    content: "";
-    position: absolute;
-    border: 0 solid transparent;
-    border-top: 3px solid red;
-    border-radius: 20px 0 0 0;
-    top: -12px;
-    left: -9px;
-    width: 12px;
-    height: 12px;
-    transform: rotate(45deg);
   }

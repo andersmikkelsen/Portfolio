@@ -20,6 +20,7 @@
 <script src="fontawesome.js"></script>
 
     <title>Anders Mikkelsen - Videnskab.dk</title>
+  
   </head>
   <body>
     <nav class="navbar navbar-expand fixed-top">
@@ -34,7 +35,7 @@
             <a class="nav-link" href="../Portfolio/About.html">About Me</a>
         </li>
         <li class="nav-item">
-           <a class="nav-link" href="#">LinkedIn<!--<img src="https://cdn.worldvectorlogo.com/logos/linkedin.svg" class="d-inline-block align-top mx-auto" style="width: 70px; height: 70px;" alt="">--></a>
+           <a class="nav-link" href="https://www.linkedin.com/in/anders-mikkelsen-959567169/" target="_blank">LinkedIn<!--<img src="https://cdn.worldvectorlogo.com/logos/linkedin.svg" class="d-inline-block align-top mx-auto" style="width: 70px; height: 70px;" alt="">--></a>
           </a>
         </li>
       </ul>
@@ -170,9 +171,19 @@
 
   </div> 
     </div>
-
+    <div class="row call-to-action">
+      <div class="col-md-6 align-self-center">
+        <h1>Wanna chat?</h1>
+      <p class="black"><a class="maillink black" href="mailto:anders.s.mikkelsen@gmail.com">Shoot me a message</a> if you want to have a chat about anything and hear more about what I can do for your organisation. </p>
+    </div>
+    <div class="col-md-6">
+      <img src="wave-emoji.png" class="mx-auto img-fluid" style="max-width: 350px;">
+    </div>
+    </div>
   </div>
+ 
 </div>
+
 </div>
 
 
@@ -190,5 +201,20 @@
   loop: true
 });
       </script>
+
+      <script>
+      var navbar = document.querySelector('nav')
+
+window.onscroll = function() {
+
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+};
+</script>
+     
   </body>
 </html>

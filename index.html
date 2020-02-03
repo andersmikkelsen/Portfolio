@@ -33,7 +33,7 @@
             <a class="nav-link" href="../Portfolio/About.html">About Me</a>
         </li>
         <li class="nav-item">
-           <a class="nav-link" href="#">LinkedIn<!--<img src="https://cdn.worldvectorlogo.com/logos/linkedin.svg" class="d-inline-block align-top mx-auto" style="width: 70px; height: 70px;" alt="">--></a>
+           <a class="nav-link" href="https://www.linkedin.com/in/anders-mikkelsen-959567169/" target="_blank">LinkedIn<!--<img src="https://cdn.worldvectorlogo.com/logos/linkedin.svg" class="d-inline-block align-top mx-auto" style="width: 70px; height: 70px;" alt="">--></a>
           </a>
         </li>
       </ul>
@@ -60,13 +60,14 @@
       <div class="col-md-12">
           <h1 class="contentheader">Work</h1>
       </div>
-    	      
-  <div class="col-md-6 maincontentcontainer school dropshadow">
+    </div>    
+    <div class="row">
+  <div class="col-md-6 maincontentcontainer school dropshadow" onclick="location.href='Videnskab.html';">
     <!--<i class="fa fa-university mx-auto" style="font-size: 75px;" aria-hidden="true"></i>-->
- <a href="Videnskab.html"><img src="logo.svg" class="img-fluid mx-auto d-block "></a>         
+ <a href="Videnskab.html"><img src="logo.svg" class="img-fluid mx-auto d-block " ></a>         
 <p style="color: #fff; opacity: 1; text-align: center;">There's a lot of information on the world wide web - but how exactly can you trust what you read, when everyone can write whatever they want, whereever they want? In this case I helped Videnskab.dk solve the problem of conveying credibility to their users.</p>
 </div>
-        <div class="col-md-6 maincontentcontainer wip dropshadow">
+        <div class="col-md-6 maincontentcontainer wip dropshadow"  onclick="location.href='WWLFDMD.html';">
 <!--<i class="fa fa-university mx-auto" style="font-size: 75px;" aria-hidden="true"></i>-->
 <a href="WWLFDMD.html"><h2 style="font-family: 'Fira Sans', sans-serif; color: #fff;
     /*border-bottom: 2px solid rgba(255,255,255,0.2);*/ font-size: 2.2rem; padding-top: 30px;">WWLFDMD</h2><br>
@@ -101,5 +102,18 @@
   loop: true
 });
       </script>
+            <script>
+              var navbar = document.querySelector('nav')
+        
+        window.onscroll = function() {
+        
+          // pageYOffset or scrollY
+          if (window.pageYOffset > 0) {
+            navbar.classList.add('scrolled')
+          } else {
+            navbar.classList.remove('scrolled')
+          }
+        };
+        </script>
   </body>
 </html>

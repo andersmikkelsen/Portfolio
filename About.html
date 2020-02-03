@@ -33,7 +33,7 @@
             <a class="nav-link" href="../Portfolio/About.html">About Me</a>
         </li>
         <li class="nav-item">
-           <a class="nav-link" href="#">LinkedIn<!--<img src="https://cdn.worldvectorlogo.com/logos/linkedin.svg" class="d-inline-block align-top mx-auto" style="width: 70px; height: 70px;" alt="">--></a>
+           <a class="nav-link" href="https://www.linkedin.com/in/anders-mikkelsen-959567169/" target="_blank">LinkedIn<!--<img src="https://cdn.worldvectorlogo.com/logos/linkedin.svg" class="d-inline-block align-top mx-auto" style="width: 70px; height: 70px;" alt="">--></a>
           </a>
         </li>
       </ul>
@@ -44,7 +44,7 @@
     <div class="row">
         <div class="col-md-6 ">
             <h1 class="contentheader" style="margin-top: 0">Hello.</h1>
-            <p class ="whitetxt">Designer and aspiring developer based in Copenhagen, Denmark. I solve business critical problems, design & build digital products.
+            <p class ="whitetxt">I'm a designer and aspiring developer based in Copenhagen, Denmark. I solve business critical problems, design & build digital products.
 
                 I am proficient within and passionate about:  </p>
                 
@@ -81,5 +81,18 @@
   loop: true
 });
       </script>
+            <script>
+              var navbar = document.querySelector('nav')
+        
+        window.onscroll = function() {
+        
+          // pageYOffset or scrollY
+          if (window.pageYOffset > 0) {
+            navbar.classList.add('scrolled')
+          } else {
+            navbar.classList.remove('scrolled')
+          }
+        };
+        </script>
   </body>
 </html>
